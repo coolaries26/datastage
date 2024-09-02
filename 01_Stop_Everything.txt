@@ -1,0 +1,64 @@
+*****************************************
+ACTION TO BE PERFORMED BY 
+STEP A -------- SCADMIN
+STEP B -------- SCADMIN 
+STEP C -------- SCADMIN 
+STEP D -------- SCADMIN 
+STEP E -------- SCADMIN 
+STEP F -------- SCADMIN 
+*******************************************
+
+Using a terminal program, such as PuTTY log into respective server:
+
+STEP A. Stop ETL     #SCADMIN
+----------- ------ -----------------
+1. log into the b01aciisd003.ahe.pok.ibm.com
+2. user : sciwetl 	
+2. touch /home/sciwetl/disableETL 
+
+STEP B. Stop Capture of SalesConnect Data #SCADMIN
+------------------------------------ ---- ---------
+1. log into the g01acirdb025.ahe.pok.ibm.com
+2. user : dpsiwcp
+3. cd ~/dpropout
+4. asnccmd capture_server=SALECONN capture_schema=ASN stop 
+5. ps -ef | grep -i 'asn'
+6. If the results from step 5 indicate that an asncap process is running kill the process using the following command.  If no asncap processes are running, proceed to step 5
+	kill -9 [pid]
+7. Ensure that the asncap cronjob is turned off by running:  If the cronjob exists and is enabled, comment it out.
+	crontab -l
+
+STEP C. Stop Apply of Salesconnect data #SCADMIN
+---------------------------------------- -------
+
+1. log into the b01acirdb070.ahe.pok.ibm.com
+2. user : dpsiwap
+3. cd ~/dpropout
+4. asnacmd CONTROL_SERVER=SCIWREP APPLY_QUAL=DPRASCT stop 
+5. Ensure that asnapply is stopped:
+  ps axe | grep -i asnapply | grep -i dpsiwap
+6. If the results from step 5 indicate that an asncap process is running kill the process using the following command.  If no asncap processes are running, proceed to step 5
+	kill -9 [pid]
+7. Ensure that the asnapply cronjob for APPLY_QUAL=DPRASCT is turned off. If the cronjob exists and is enabled, comment it out.
+	crontab -l
+
+STEP D. Stop Apply in Staging DB #SCADMIN
+-------------------------------- --------
+
+1. log into the b01acirdbs004.ahe.pok.ibm.com
+2. user : dpsiwap
+3. cd ~/dpropout
+4. asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRAUDIT stop 
+   asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRAFCST stop 
+   asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRASET1 stop 
+   asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRASET2 stop
+   asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRASET3 stop 
+   asnacmd CONTROL_SERVER=SCIWSTG APPLY_QUAL=DPRADOPS stop
+    
+5. Ensure that asnapply is stopped:
+  ps axe | grep -i asnapply 
+6. If the results from step 5 indicate that an asnapply process is running kill the process using the following command.  If no asnapply processes are running, proceed to step 7
+	kill -9 [pid]
+7. Ensure that the asnapply cronjob is turned off. If the cronjob exists and is enabled, comment it out.
+	crontab -l
+	

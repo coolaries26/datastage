@@ -1,0 +1,55 @@
+restart datastage
+check if anyone is connected
+ps -ef | grep -i phantom
+ps -ef | grep dsapi
+ps -ef | grep dscs
+These commands should not return any results. If they return results, it means that there are still some processes running. You can wait for the users to stop their processes or kill the processes (using kill -9 PID).
+
+Check if dsrpc is running
+	netstat -a | grep dsrpc
+If dsrpc is running, then you should get a line with the status LISTEN. If you get more lines it means that there are still some connections and you need to wait. If you see that dsrpc or other connections are in status WAIT then you also need to wait until this it disappears (you can also reboot the machine).
+
+
+Stop
+	cd /opt/IBM/InformationServer/Server/DSEngine
+	bin/uv -admin -stop
+
+Then see if there is any memory segment left:
+	ipcs -mop | grep ade
+		For 64-bit Linux, use: ipcs -qms -a 
+If you get a result, take note of the PID and remove it (you will need root access)
+	ipcrm -m PID
+Then, check the port again using
+	netstat -a | grep dsrpc
+You should not get any result. If you get any results and the dsrpc is in WAIT state, then you need to wait until it disappears (you can also reboot the machine).
+
+
+Stop the ASB Agent (you need to be root user) 
+	cd /opt/IBM/InformationServer/ASBNode/bin
+	./NodeAgents.sh stop 
+Type 'yes' if you receive the following message:
+rm: remove write-protected regular file `Agent.pid'? 
+
+Check the agent has stopped:
+	ps -ef | grep -i agent|grep -v zabbix
+
+	
+Stop the WebSphere Application Server (you need to be root user) 
+	cd /opt/IBM/InformationServer/ASBServer/bin
+	./MetadataServer.sh stop
+Now check there are no java processes left behind:
+	ps -ef | grep java
+	
+
+Strart DS WAS
+	cd /opt/IBM/InformationServer/ASBServer/bin
+	./MetadataServer.sh run
+Start the ASB Agent (you need to be root user) 
+	cd /opt/IBM/InformationServer/ASBNode/bin
+	./NodeAgents.sh start
+Start the DSEngine: root
+Follow the steps:
+	cd /opt/IBM/InformationServer/Server/DSEngine
+	. ./dsenv
+	bin/uv -admin -start
+	bin/uv -admin -info

@@ -1,0 +1,10 @@
+1. log into the g01acirdb025.ahe.pok.ibm.com
+2. user : dpsiwcp
+3. cd ~/dpropout
+4. Kill -9 28639422
+
+after killing just chk if any process running
+If its not running then we can start in warm mode 
+
+5. nohup asncap capture_server=SALECONN capture_schema=ASN pwdfile=asnpwd.aut & 
+

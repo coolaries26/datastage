@@ -1,0 +1,97 @@
+#!/bin/sh
+####################################################################
+#
+# dsenv - DataStage environment file
+#
+#	Copyright (c) 1997 - 2004 Ascential Software Corporation. All Rights Reserved
+#	This is unpublished proprietary source code of Ascential Software Corporation
+#	The copyright notice above does not evidence any actual or
+#	intended publication of such source code.
+#
+# This script is sourced by the DataStage dsrpcd daemon to establish 
+# proper environment settings for DataStage client connections.
+#
+# This script may also be sourced by bourne shells to establish 
+# proper environment settings for local DataStage use.
+#
+####################################################################
+
+# PLATFORM SPECIFIC SECTION
+
+set +u
+### BEGIN: Added to match settings from d25was39
+
+#DB2DIR=/usr/opt/db2_08_01; export DB2DIR
+DB2DIR=/opt/IBM/db2/V9.7; export DB2DIR
+DB2INSTANCE=db2inst1; export DB2INSTANCE
+INSTHOME=/home/db2inst1; export INSTHOME
+THREADS_FLAG=native; export THREADS_FLAG
+### END: Added to match settings from d25was39
+
+
+
+if [ -z "$DSHOME" ] && [ -f "/.dshome" ]
+then
+	DSHOME=`cat /.dshome`
+	export DSHOME
+fi
+
+if [ -z "$DSHOME" ]
+then
+	DSHOME=/db2/disk0/DataStage/Ascential/DataStage/DSEngine; export DSHOME
+fi
+
+if [ -z "$APT_ORCHHOME" ]
+then
+	APT_ORCHHOME=/db2/disk0/DataStage/Ascential/DataStage/PXEngine; export APT_ORCHHOME
+fi
+
+if [ -z "$UDTHOME" ]
+then
+	UDTHOME=/db2/disk0/DataStage/Ascential/DataStage/ud41; export UDTHOME
+	UDTBIN=/db2/disk0/DataStage/Ascential/DataStage/ud41/bin; export UDTBIN
+fi
+
+if [ -n "$DSHOME" ] && [ -d "$DSHOME" ]
+then
+	ODBCINI=$DSHOME/.odbc.ini; export ODBCINI
+	HOME=${HOME:-/}; export HOME
+	
+	#LANG="<langdef>";export LANG
+	#LC_ALL="<langdef>";export LC_ALL
+	#LC_CTYPE="<langdef>";export LC_CTYPE
+	#LC_COLLATE="<langdef>";export LC_COLLATE
+	#LC_MONETARY="<langdef>";export LC_MONETARY
+	#LC_NUMERIC="<langdef>";export LC_NUMERIC
+	#LC_TIME="<langdef>";export LC_TIME
+	#LC_MESSAGES="<langdef>"; export LC_MESSAGES
+### BEGIN: Added to match settings from d25was39
+	LANG="EN_US.UTF-8";export LANG
+	LC_ALL="EN_US.UTF-8";export LC_ALL
+	LC_CTYPE="EN_US.UTF-8";export LC_CTYPE
+	LC_COLLATE="EN_US.UTF-8";export LC_COLLATE
+	LC_MONETARY="EN_US.UTF-8";export LC_MONETARY
+	LC_NUMERIC="EN_US.UTF-8";export LC_NUMERIC
+	LC_TIME="EN_US.UTF-8";export LC_TIME
+	LC_MESSAGES="EN_US.UTF-8";export LC_MESSAGES
+
+        APT_COMPILER=/usr/vacpp/bin/xlC_r; export APT_COMPILER
+        APT_LINKER=/usr/vacpp/bin/xlC_r; export APT_LINKER
+	LIBPATH=$APT_ORCHHOME/lib:.:${DB2DIR}/lib:$INSTHOME/sqllib/lib:$DSHOME/../branded_odbc/lib:$DSHOME/lib:$DSHOME/uvdlls:$DSHOME/java/jre/bin/classic:$DSHOME/java/jre/bin:$LIBPATH
+	export LIBPATH
+        PATH=${APT_ORCHHOME}/bin:${APT_ORCHHOME}/etc:${APT_ORCHHOME}/osh_wrappers:$DSHOME/../branded_odbc/bin:$DSHOME/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:.:$INSTHOME/sqllib/bin:$INSTHOME/sqllib/adm:$INSTHOME/sqllib/misc
+        export PATH
+        PWD=`pwd`; export PWD
+
+### END: Added to match settings from d25was39
+
+
+### BEGIN: Commented out due to LIBPATH being set above	
+#	LIBPATH=`dirname $DSHOME`/branded_odbc/lib:$DSHOME/lib:$DSHOME/uvdlls:$DSHOME/java/jre/bin/classic:$DSHOME/java/jre/bin:$LIBPATH
+#	export LIBPATH
+### END: Commented out due to LIBPATH being set above	
+fi
+
+## added when moving DS to at3etaix01
+APT_PM_CONDUCTOR_HOSTNAME=at3etaix01; export APT_PM_CONDUCTOR_HOSTNAME
+DS_HOSTNAME_ALIAS=at3etaix01; export DS_HOSTNAME_ALIAS

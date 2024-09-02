@@ -1,0 +1,67 @@
+To check the datastage related process 
+==============================================================
+1) To check the DS jobs running on the server or not
+ps -ef |grep phantom
+ps -ef |grep DSD.RUN
+
+2) To check the DSEngine 
+ps -ef |grep dsrpc
+
+3) To check the NodeAgent is running or not
+ps -ef |grep Agent
+
+4) To check the WAS is running or not 
+ps -ef |grep server1 or DS related JVM
+
+5) To check DB2 is running or not
+su - db2inst1  (Datastage related instance)
+db2
+==> connect to xmeta
+
+it can connect to xmeta db if DB2 is up 
+
+To check the databace connection.
+
+
+Stop and start Process
+==================================================================================
+Stop Process:
+==========================================
+1) DSEngine 2) Agent 3) WAS then 4) DB2 (DB2 team can tack care)
+
+DSEngnie
+----------------
+cd /opt/IBM/InformationServer/Server/DSEngine/
+. ./dsenv
+bin/uv -admin -stop
+
+Agent
+----------------
+cd /opt/IBM/InformationServer/ASBNode/bin
+./NodeAgents.sh stop
+
+WAS
+----------------
+kill -9 (process id)
+or you can stop 
+cd /usr/IBM/WebSphere/profiles/InfoSphere/bin
+./stopServer.sh server1
+
+Start Process
+===========================================
+1) DB2 (DB2 team can tack care) 2) WAS 3) Agent 4) DSEngine
+WAS
+------------
+cd /usr/IBM/WebSphere/profiles/InfoSphere/bin
+./startServer.sh server1
+
+Agent
+----------------
+cd /opt/IBM/InformationServer/ASBNode/bin
+./NodeAgents.sh start
+
+DSEngnie
+----------------
+cd /opt/IBM/InformationServer/Server/DSEngine/
+. ./dsenv
+bin/uv -admin -start  

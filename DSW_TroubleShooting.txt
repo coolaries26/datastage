@@ -1,0 +1,370 @@
+When accounts had issues, usrs table also wont update
+
+Trouble Shooting ->
+
+
+NO ERROR but nothing happening
+--- Turns out dpdswap pwd expired,  but it wont throw error, but will also not do anything !!
+
+1. ASN8999D - error messages details
+http://www-01.ibm.com/support/docview.wss?uid=swg21177206
+
+
+  DSADMIN needs to run - db2admin start as dasusr1
+
+
+2. COMMAND was incorrect 
+     $ asncap capture_server=SCMDB capture_schema=ASN stop
+2015-04-17-12.22.21.679035 ASN0600I  "Capture" : "" : "Initial" : Program "capture 10.1.3 (Build 10.1.0.3 Level s130918, PTF IP23509)" is starting.
+2015-04-17-12.22.21.683653 ASN0504E  "Capture" : "ASN" : "Initial" : The program did not recognize the invocation parameter "stop".
+2015-04-17-12.22.21.683940 ASN0008I  CAPTURE "ASN" : "Initial". The Capture program was stopped.
+$ rm a1insctp.SCMDB.ASN.CAP.log nohup.out
+$ nohup asncap capture_server=SCMDB startmode=cold capture_schema=ASN logreuse=y &
+[2]     16973904
+$ Sending nohup output to nohup.out.
+
+$
+$ cat nohup.out
+2015-04-17-12.22.59.465083 ASN0600I  "Capture" : "" : "Initial" : Program "capture 10.1.3 (Build 10.1.0.3 Level s130918, PTF IP23509)" is starting.
+$ cat nohup.out
+2015-04-17-12.22.59.465083 ASN0600I  "Capture" : "" : "Initial" : Program "capture 10.1.3 (Build 10.1.0.3 Level s130918, PTF IP23509)" is starting.
+2015-04-17-12.23.29.568562 ASN0544E  "Capture" : "ASN" : "Initial" : The program is already active.
+2015-04-17-12.23.31.578129 ASN0008I  CAPTURE "ASN" : "Initial". The Capture program was stopped.
+[2] +  Done(12)                nohup asncap capture_server=SCMDB startmode=cold capture_schema=ASN logreuse=y &
+$
+
+
+3.anspwd.aut was incorect ...userid did not have access
+
+2015-04-17-12.57.05.363432 <CPAINS2(CF/07)> ASN1001E  APPLY "USERQUAL" : "WorkerThread". The Apply program encounte
+red an SQL error. The ERRCODE is "CF0107". The SQLSTATE is "57011". The SQLCODE is "-964". The SQLERRM is "". The S
+QLERRP is "SQLRI039". The server name is "". The table name is "SCTID.TGUSERS".
+
+
+4. ASN1011E APPLY "APP1" : "WorkerThread". The copy request has incompatible source and target
+attributes. The SQL code is "CA1107".
+
+This error happens when all of the columns of a subscribed table are registered as key columns for replication (have IS_KEY=Y in the IBMSNAP_SUBS_COLS table) and the value of CHG_UPD_TO_DEL_INS is N in the IBMSNAP_REGISTER table
+
+
+
+5.  The Apply program detected a gap
+ in changed data between the source table "SCTID.ACCOUNTS" and the target table. The error code is "4A5102"
+     ------------> I added a new target table ( member),  but capure was running in cold start mode.  Restarted capture and the problme went away
+
+2015-06-06-21.17.10.498049 <CPGPTST(4A/02)> ASN1051W  APPLY "QUALAIX11" : "WorkerThread" : The Apply program detected a gap in changed data between the source table "FFXT1.SALES_ORD_HDR_EXTRCT" and the target table. The error code is "4A5102".
+  ------------------>  I added new table which apply was still running ..
+
+2015-06-06-21.24.13.289702 <CPGPTST(4A/02)> ASN1051W  APPLY "QUALAIX11" : "WorkerThread" : The Apply program detected a gap in cha
+nged data between the source table "FFXT1.SALES_ORD_HDR_EXTRCT" and the target table. The error code is "4A5102".
+2015-06-06-21.24.13.289808 <CPWPLAN(5E/03)> ASN1016I  APPLY "QUALAIX11" : "WorkerThread". Refresh copying has been disabled. The e
+rror code is "5E1603".
+ ---------------->  On Capture side, ASN.IBMSNAP_REGISTER - update ASN.IBMSNAP_REGISTER set disable_refresh=0 where source_owner=<schmea-nm> and source_table=<>
+                        Example -- db2 "update ASN.IBMSNAP_REGISTER  set disable_refresh=0 where source_owner='FFXT1' and SOURCE_TABLE='SALES_ORD_HDR_EXTRCT'"  
+			No neeed to restart apply
+
+ 
+  
+
+
+6. 2015-04-21-14.26.17.300289 <CPCDSET(92/01)> ASN1001E  APPLY "USERQUAL" : "WorkerThread". The Apply program encountered an
+SQL error. The ERRCODE is "920101". The SQLSTATE is "42803". The SQLCODE is "-119". The SQLERRM is "COVERAGE_IDS". The SQL
+ERRP is "SQLNQ16F". The server name is "". The table name is "SCTID.CDACCOUNTS".
+
+
+7. 2015-04-22-14.14.54.288406 <CPGPTST(4A/02)> ASN1051W  APPLY "USERQUAL" : "WorkerThread" : The Apply program detected a gap in changed data between the source table "SC
+TID.ACCOUNTS" and the target table. The error code is "4A5102".
+2015-04-22-14.14.54.288577 <CPGPTST(4A/02)> ASN1051W  APPLY "USERQUAL" : "WorkerThread" : The Apply program detected a gap in changed data between the source table "SC
+TID.USERS" and the target table. The error code is "4A5102"
+
+ IGNORE the error...things flow just fine with cold start 
+   http://www-01.ibm.com/support/docview.wss?uid=swg21404030  
+
+
+8 FYI 
+  When capture error happens,  Capture program writes an error message in the IBMSNAP_CAPTRACE table and terminates
+  For apply, I think its ApplyTrail 
+
+	http://www-01.ibm.com/support/docview.wss?uid=swg21385876
+
+
+9. ERROR when Capture starts  but appears fine running
+
+	2015-04-30-13.26.30.072307 <Asnenv:setEnvIpcQRcvHdl> ASN0594I  "Capture" : "ASN" : "Initial" The program created an IPC queue with keys "(0x30003018
+	)".
+	2015-04-30-13.26.30.709482 <readRestart> ASN8999D zero rows in RESTART
+	2015-04-30-13.26.30.709513 <sqlCapReadRestartInfo> ASN0589I  "Capture" : "ASN" : "WorkerThread" The program received return code "920" from routine
+	"readRestart".
+	2015-04-30-13.26.31.426599 <printStartInfo> ASN8999D lastCmtLSN= 0000:0000:0000:0000:0000:0000:0000:0000
+
+
+10. BAD PWD in awt file ( i'd history of what i entered )
+
+2015-04-30-13.40.26.516710 ASN0552E  "Apply" : "userqual" : "Initial" : The program encountered an SQL error. The server name is "BETTY". The SQL re
+quest is "CONNECT". The table name is "N/A". The SQLCODE is "-30082". The SQLSTATE is "08001". The SQLERRMC is "24ÿUSERNAME AND/OR PASSWORD INVALIDÿ
+". The SQLERRP is "SQLEXSMC"
+2015-04-30-13.40.26.516768 ASN0530E  "Apply" : "userqual" : "Initial" : The program could not connect to database "BETTY" with USERID "dpdswcp" .  T
+he SQLCODE is "-30082".
+
+
+11.  start_apply has incorrect information for apply qualifier 
+
+RQUAL".
+2015-04-30-13.51.05.055031 <asnThread::stop> ASN0590I  "Apply" : "USERQUAL" : "Initial" The thread "Initial" received return code "2" from the exiti
+ng thread "WorkerThread".
+2015-04-30-13.51.05.055629 <Asnenv:delEnvIpcQRcvHdl> ASN0595I  "Apply" : "USERQUAL" : "Initial" The program removed an IPC queue with keys "(0x30003
+00d)".
+2015-04-30-13.51.05.055650 <asnThread::stop> ASN0590I  "Apply" : "USERQUAL" : "Initial" The thread "Initial" received return code "0" from the exiti
+ng thread "HoldLThread".
+2015-04-30-13.51.05.055728 <erWhatSignal> ASN0591I  "Apply" : "USERQUAL" : "HoldLThread" The thread "HoldLThread" received "Handled" signal "SIGUSR2
+".
+
+12. Apply could not connect to Capture -- pwd file needs to be under dpropout dir/
+
+-04-30-14.00.54.292904 ASN0552E  "Apply" : "DPRADSW" : "WorkerThread" : The program encountered an SQL error. The server name is "SCMDB". The SQL request is "CONNECT". The table name is "N/A". The SQLCODE i
+s "-30082". The SQLSTATE is "08001". The SQLERRMC is "3ÿPASSWORD MISSINGÿ". The SQLERRP is "SQLEXSMC".
+2015-04-30-14.00.54.292961 ASN0530E  "Apply" : "DPRADSW" : "WorkerThread" : The program could not connect to database "SCMDB" with USERID "N/A" .  The SQLCODE is "-30082".
+
+
+12. When start apply, says SET not available,  reason - missed running 04 step on capture_source.sql 
+
+
+13.  Instance owner should have access to dropout dir (  http://www-01.ibm.com/support/docview.wss?uid=swg21160965 ) 
+(       first make sure that the user IDs for the DB2 instance and the Apply program are both members of a common group )
+
+message file :
+SQL3508N  Error in accessing a file or path of type "TEMP_FILE" during load or
+load query. 
+
+apply_out :
+  2015-04-30-15.56.18.448029 ASN1053E  APPLY "DPRADSW" : "WorkerThread".  The execution of the ASNLOAD exit routine failed. The return code is "109".
+  The NLS msg is ASN1053E  APPLY "DPRADSW" : "WorkerThread".  The execution of the ASNLOAD exit routine failed. The return code is
+   "109".
+
+
+      
+14 . WHEN CAPTURE DB IS DOWN  - ERRWAIT in APPPARMS is 300 sec  ( If Capure  process is down, no error on apply side ) 
+015-05-15-12.56.54.349719 <dbConnection::dbConnectCtx> ASN0552E  "Apply" : "DPRADSW" : "WorkerThread" : The program encountered an SQL error. The
+server name is "SCMDB". The SQL request is "CONNECT". The table name is "N/A". The SQLCODE is "-30081". The SQLSTATE is "08001". The SQLERRMC is "7
+9ÿ*ÿ*ÿTCP/IPÿSOCKETSÿ9.37.16.43ÿconnectÿ". The SQLERRP is "SQLJCMN ".
+2015-05-15-12.56.54.349781 <dbConnection::dbConnectCtx> ASN0534E  "Apply" : "DPRADSW" : "WorkerThread" : DB2 "SCMDB" cannot be used, because it is
+in the "TERMINATED" state.
+2015-05-15-12.56.54.349806 <dbConnection::dbSwapCtx> ASN0589I  "Apply" : "DPRADSW" : "WorkerThread" The program received return code "928" from rou
+tine "dbConnection::dbConnectCtx".
+2015-05-15-12.56.54.349822 <process_set> ASN0589I  "Apply" : "DPRADSW" : "WorkerThread" The program received return code "928" from routine "dbSwap
+Ctx".
+2015-05-15-12.56.54.699819 <CPPSET(45/20)> ASN1003E  APPLY "DPRADSW" : "WorkerThread".  The Apply program could not connect to the server "SCMDB".
+2015-05-15-12.56.54.702667 <CPREST(01/00)> ASN1044I  APPLY "DPRADSW" : "WorkerThread". The Apply program will become inactive for "5" minutes and "
+0" seconds.
+
+
+15. IF APPLY DB2 is DOWN - NO ERROR IN CAPTURE ( if apply process is down, no error on capture ) 
+
+   Even if you stop capure and restart, still no errors
+
+16 .  When PRIMARY becomes STANDBY... ASN STOPS 
+    2015-05-18-11.11.53.904334 <dbConnection::dbConnectCtx> ASN0552E  "Apply" : "DPRADSW" : "WorkerThread" : The program encountered an SQL error. Theserver name is "BETTY". The SQL request is "CONNECT". The table name is "N/A". The SQLCODE is "-1776". The SQLSTATE is "     ". The SQLERRMC is "1". The SQLERRP is "SQLEFRCN".
+2015-05-18-11.11.53.904414 <dbConnection::dbConnectCtx> ASN0534E  "Apply" : "DPRADSW" : "WorkerThread" : DB2 "BETTY" cannot be used, because it isin the "HADR STANDBY" state.
+2015-05-18-11.11.53.904438 <dbConnection::dbSwapCtx> ASN0589I  "Apply" : "DPRADSW" : "WorkerThread" The program received return code "928" from routine "dbConnection::dbConnectCtx".
+2015-05-18-11.11.53.904455 <AppWorkerMain> ASN0589I  "Apply" : "DPRADSW" : "WorkerThread" The program received return code "928" from routine "dbSwapCtx".
+2015-05-18-11.11.54.010023 <asnThread::stop> ASN0590I  "Apply" : "DPRADSW" : "Initial" The thread "Initial" received return code "4" from the exiting thread "WorkerThread".
+2015-05-18-11.11.54.010569 <Asnenv:delEnvIpcQRcvHdl> ASN0595I  "Apply" : "DPRADSW" : "Initial" The program removed an IPC queue with keys "(0x3000300d)".
+2015-05-18-11.11.54.010618 <asnThread::stop> ASN0590I  "Apply" : "DPRADSW" : "Initial" The thread "Initial" received return code "0" from the exiting thread "HoldLThread".
+2015-05-18-11.11.54.010714 <erWhatSignal> ASN0591I  "Apply" : "DPRADSW" : "HoldLThread" The thread "HoldLThread" received "Handled" signal "SIGUSR2".
+2015-05-18-11.11.55.011696 <_asnApply> ASN1097I  APPLY "DPRADSW" : "Initial". The Apply program stopped.
+
+
+
+
+
+17 . I dropped member.asnclp and ran only on apply side   (  one time, replicaion was not seutp on capture side - check register table )
+ASN1508I  The replication action "Add Subscription Member" started at "Friday, May 22, 2015 2:51:40 PM EDT". The subscription set i
+nformation follows: the Apply control server is "BETTY", the Apply qualifier is "DPRADSW", the set name is "DSW_SET", the target se
+rver is "BETTY", the Capture server is "SCMDB", and the Capture schema is "ASN".
+ASN1806E  The replication action ended in error for the Apply qualifier  "DPRADSW", subscription-set name "DSW_SET", WHOS_ON_FIRST
+value "S", source member "SCTID.QUOTES", source view qualifier "0", target member "DSWREPL.QUOTES". The subscription-set member can
+not be added to the provided subscription set. Reason code "14".
+ASN1514I  The replication action ended at "Friday, May 22, 2015 2:51:40 PM EDT" with "0" successes, "1" errors, and "0" warnings.
+
+
+
+18.  Primary KEY cannot be renamed , i made quote_num as ID in expression statemetn and below error. Once i changed back to quote_num, fine 
+- ASNCLP Version 10.05.05 Build date 2014-11-29 01:13:51
+ASN1508I  The replication action "Add Subscription Member" started at "Sunday, May 31, 2015 10:25:54 PM EDT". The subscription set inform
+ation follows: the Apply control server is "SALECONN", the Apply qualifier is "QUALAIX11", the set name is "DSW_AIX11", the target server
+ is "SALECONN", the Capture server is "DSWODS", and the Capture schema is "ASN".
+ASN1812E  The replication action ended in error for Apply qualifier "QUALAIX11", set name "DSW_AIX11", WHOS_ON_FIRST value "S", source me
+mber "FFXT1.QUOTE_HDR_EXTRCT", source view qualifier "0", target member "DSW.QUOTES".  The subscription target member cannot be added bec
+ause the required target key is not valid. Reason code "0".
+ASN1514I  The replication action ended at "Sunday, May 31, 2015 10:25:58 PM EDT" with "0" successes, "1" errors, and "0" warnings.
+
+
+19.  dpropour - 775 missing
+
+SQL3508N  Error in accessing a file or path of type "TEMP_FILE" during load or
+load query.  Reason code: "1".  Path:
+"/home/dpdswap/dpropout/DB2001F7.PID/DB200004.OID/load".
+
+
+20  -- FS FULL 
+
+2015-06-11-21.33.50.974941 <CPFETCD(93/03)> ASN1022E  APPLY : "QUALAIX11" : "WorkerThread" : The Apply program cannot write to the
+work file "" because of a system error with ERRNO "/home/dpdswap/dpropout/QUALAIX11.000". The error code is "28".
+2015-06-11-21.33.50.996006 <CPREST(01/00)> ASN1044I  APPLY "QUALAIX11" : "WorkerThread". The Apply program will become inactive for
+ "5" minutes and "0" seconds.
+
+21. when SOURCE data type changes, get this error -->
+ 2015-06-11-21.43.38.218433 <process_set> ASN0999E  "Apply" : "QUALAIX11" : "WorkerThread" : Error condition "constraint violation e
+rror, can not be resolved in the cycle.", error code(s): " ", " ",  " ".
+
+
+22.
+2015-06-14-09.52.32.530835 <CPGMI(43/0D)> ASN1008E  APPLY "QUALAIX11" : "WorkerThread". The subscription set with Apply qualifier "QUALAIX11" and
+set name "DSW_AIX11" is not defined correctly. ERRCODE is "43080D".
+
+
+23.  CAPTURE DOWN - upgrade to 10.5  -->  STOP APPLY
+-----------------------
+2015-07-15-07.13.56.893422 <dbConnection::dbConnectCtx> ASN0552E  "Apply" : "QUALAIX11" : "WorkerThread" : The program enc
+ountered an SQL error. The server name is "DSWODS". The SQL request is "CONNECT". The table name is "N/A". The SQLCODE is
+"-30081". The SQLSTATE is "08001". The SQLERRMC is "*ÿ*ÿ0ÿTCP/IPÿSOCKETSÿ9.3.51.107ÿrecvÿ". The SQLERRP is "SQLJCMN ".
+2015-07-15-07.13.56.893487 <dbConnection::dbConnectCtx> ASN0534E  "Apply" : "QUALAIX11" : "WorkerThread" : DB2 "DSWODS" ca
+nnot be used, because it is in the "TERMINATED" state.
+2015-07-15-07.13.56.893510 <dbConnection::dbSwapCtx> ASN0589I  "Apply" : "QUALAIX11" : "WorkerThread" The program received
+ return code "928" from routine "dbConnection::dbConnectCtx".
+
+
+2015-07-17-20.40.44.313317 <dbConnection::dbSwapCtx> ASN0589I  "Apply" : "QUALAIX11" : "WorkerThread" The program received
+ return code "928" from routine "dbConnection::dbConnectCtx".
+2015-07-17-20.40.44.313368 <process_set> ASN0589I  "Apply" : "QUALAIX11" : "WorkerThread" The program received return code
+ "928" from routine "dbSwapCtx".
+2015-07-17-20.40.44.323443 <CPPSET(45/20)> ASN1003E  APPLY "QUALAIX11" : "WorkerThread".  The Apply program could not conn
+ect to the server "DSWODS".
+2015-07-17-20.40.44.324425 <CPPSET(45/00)> ASN1025I  APPLY "QUALAIX11" : "WorkerThread". The Apply program completed proce
+ssing for subscription set "DSW_AIX11"("S"). The return code is "-1"
+
+
+24.
+--------------------------
+.53.703513 ASN0591I  "Apply" : "QUALAIX11" : "Initial" The thread "Initial" received "Handled" signal "SIGSEGV".
+2015-07-28-17.01.53.703602 ASN0595I  "Apply" : "QUALAIX11" : "Initial" The program removed an IPC queue with keys "000000011049a370".
+2015-07-28-17.01.53.703683 ASN0590I  "Apply" : "QUALAIX11" : "Initial" The thread "Initial" received return code "0" from the exiting thread "HoldLThread".
+2015-07-28-17.01.53.703820 ASN0591I  "Apply" : "QUALAIX11" : "HoldLThread" The thread "HoldLThread" received "Handled" signal "SIGUSR2".
+2015-07-28-17.01.53.703971 ASN0590I  "Apply" : "QUALAIX11" : "Initial" The thread "Initial" received return code "0" from the exiting thread "WorkerThread".
+2015-07-28-17.01.53.705779 ASN8053D  "Apply" : "QUALAIX11" : "Initial" : Signal handler for signal 'SIGSEGV' successfully  dumped stack trace to file '/home/dpdswap/dpropout//a1insctp.SALECONN.QUALAIX11.APP.9437432.1.DUMP'
+
+HAD TO KILL 
+-------
+$ ps -ef|grep asn
+ dpdswap  9437432
+$ db2 list applications
+
+A1INSCTP asnapply       2814       *LOCAL.a1insctp.150728210154      
+
+$ db2 "force application (2814)"
+DB20000I  The FORCE APPLICATION command completed successfully.
+DB21024I  This command is asynchronous and may not be effective immediately.
+
+$ kill -9 9437432
+
+-----------------------------------------------
+
+25 .  ASN1814E  reason code 2 - when adding new column
+  was misleading, coalesce funciton was not available or not supported by sqlrep
+
+26 . 
+  SQL27984W  The export command completed successfully. However, some
+information that would be required to recreate one or more tables has not been
+saved to the output file. The file will not be able to be used by the IMPORT
+command to create or replace tables. Reason code: "7".
+
+  I was doing concat ( a + b ) -- this one had issue with data (((( do a select ( a+b) on source table, you will find the problem))))
+SO, fixed the concat, and it worked.
+
+
+
+
+27.  actlog  FS was FULL  causing below errors 
+
+2015-12-10-01.41.17.105496 <CPREST(01/00)> ASN1044I  APPLY "QUAL_SVT3" : "WorkerThread". The Apply program will become inactive for
+"0" minutes and "57" seconds.
+2015-12-10-01.42.38.624254 <CPOPNS(3F/01)> ASN1001E  APPLY "QUAL_SVT3" : "WorkerThread". The Apply program encountered an SQL error.
+ The ERRCODE is "3F0101". The SQLSTATE is "57011". The SQLCODE is "-968". The SQLERRM is "". The SQLERRP is "SQLRI03B". The server n
+ame is "". The table name is "ASN.IBMSNAP_SUBS_SET".
+2015-12-10-01.42.44.504632 <CPUAT(30/03)> ASN1001E  APPLY "QUAL_SVT3" : "WorkerThread". The Apply program encountered an SQL error.
+The ERRCODE is "300103". The SQLSTATE is "57011". The SQLCODE is "-968". The SQLERRM is "". The SQLERRP is "SQLRI039". The server na
+me is "". The table name is "ASN.IBMSNAP_APPLYTRAIL".
+2015-12-10-01.42.44.504708 <CPTTL(2E/0A)> ASN1010E  APPLY "QUAL_SVT3" : "WorkerThread".  The Apply program could not insert row "APP
+LY_QUAL=QUAL_SVT3, SET_NAME=DSW_SVT3, WHOS_ON_FIRST=S, LASTRUN=2015-12-10-01.42.14.116447, LASTSUCCESS=2015-12-10-01.41.13.489496, S
+YNCHPOINT=000000002b2c76ba56c4, SYNCHTIME=2015-12-10-00.50.26.000000, SOURCE_SERVER=DSWODS, TARGET_SERVER=SALECONN, " into the audit
+ trail table due to the following error: "ASN1001E  APPLY "QUAL_SVT3" : "WorkerThread". The Apply program encountered an SQL error.
+The ERRCODE is "300103". The SQLSTATE is "57011". The SQLCODE is "-968". The SQLERRM is "". The SQLERRP is "SQLRI039". The server na
+me is "". The table name is "ASN.IBMSNAP_APPLYTRAIL".".
+2015-12-10-01.42.44.504746 <CPPSET(45/00)> ASN1025I  APPLY "QUAL_SVT3" : "WorkerThread". The Apply program completed processing for
+subscription set "DSW_SVT3"("S"). The return code is "-1".
+2015-12-10-01.42.49.594170 <writeDbRec> ASN8999D Return code 902 occurred during execDML, SQL code is -968, error message is:
+
+
+
+
+28  SEEMS LIKE UPSTREAM WENT DOWN 
+
+16-02-12-07.09.34.977790 <CPAPS(BC/02)> ASN1001E  APPLY "QUALAIX11" : "WorkerThread". The Apply program encountered an SQL erro
+r. The ERRCODE is "BC0102". The SQLSTATE is "55032". The SQLCODE is "-1224". The SQLERRM is "". The SQLERRP is "SQLJRERM". The se
+rver name is "". The table name is ""ASN".IBMSNAP_PRUNE_SET".
+2016-02-12-07.09.34.978063 <writeDbRec> ASN8999D Return code 928 occurred during execDML, SQL code is -1224, error message is: 0ÿ
+*ÿ*ÿ*ÿ*ÿÿAGENT FORCEDÿ
+2016-02-12-07.09.34.978081 <writeDbRec> ASN8999D Cannot insert messages to ASN.IBMSNAP_APPLYTRACE until a previous error clears
+
+
+IN QUALAIX11.TRC
+
+SAT: APPERRM is ASN1003E  APPLY "QUALAIX11" : "WorkerThread".  The Apply program could not connect to the server "DSWODS".
+SQLCA is
+      +00000000  53514c43 41202020 00000088 fffffb38  |SQLCA       ÿÿû8|
+      +00000010  00002020 20202020 20202020 20202020  |                |
+      +00000020  20202020 20202020 20202020 20202020  |                |
+      +00000030  20202020 20202020 20202020 20202020  |                |
+      +00000040  20202020 20202020 20202020 20202020  |                |
+      +00000050  20202020 20202020 53514c4a 5245524d  |        SQLJRERM|
+      +00000060  8037006d 00000000 00000000 00000000  | 7 m            |
+      +00000070  00000000 00000000 20202020 20202020  |                |
+      +00000080  20202035 35303332                    |   55032        |
+*** SQL ERROR ***:  SQL1224N  The database manager is not able to accept new requests, has terminated all requests in progress, o
+r
+ has terminated the specified request because of an error or a forced interrupt.  SQLSTATE=55032
+
+APS: Prepared update stmt is UPDATE "ASN".IBMSNAP_PRUNE_SET SET  SYNCHPOINT = ?, SYNCHTIME = ? WHERE APPLY_QUAL = 'QUALAIX11'  AN
+D
+ SET_NAME = 'DSW_AIX11' AND TARGET_SERVER = 'SALECONN'.
+APS: Prepare failed. apperrc is BC0102. sqlstate is 55032. sqlcode is -1224
+
+
+
+
+
+
+INFORMATION:
+
+When you run dpropr.refresh, tables reload completely and see this message ->
+2015-05-22-12.40.56.105595 <handleCAPSTART> ASN0104I  CAPTURE "ASN" : "WorkerThread". In response to a CAPSTART signal with MAP_ID
+"1         ", change capture has started for the source table "DSW"."QUOTES" for changes found on the log beginning with log sequen
+ce number  "0000:0000:522a:606f:0000:03a9:7428:368b".
+2015-05-22-12.40.56.107849 <handleCAPSTART> ASN0104I  CAPTURE "ASN" : "WorkerThread". In response to a CAPSTART signal with MAP_ID
+"0", change capture has started for the source table "DSW"."SALES" for changes found on the log beginning with log sequence number
+ "0000:0000:522a:6070:0000:03a9:7428:368f".
+
+HOW TO ADD NEW COLUMNS TO TABLE ?
+
+ stopped apply , then added 4 new columns via, alter member add columns
+and restarted apply,  it came up fine, but 4 columns had no data
+
+so, stopped apply again and ran ->
+db2 "update ASN.IBMSNAP_SUBS_MEMBR set member_state='N' where  TARGET_TABLE='SALES_ORDER'"
+then started apply and saw this in log
+2015-08-14-10.39.41.824597 ASN1051W  APPLY "QUAL_SPOP" : "WorkerThread" : The Apply program detected a gap in changed data between the 
+source table "FFXT1.SALES_ORD_HDR_EXTRCT" and the target table. The error code is "4A5102".
+And it created an IXF file 
+
+
+

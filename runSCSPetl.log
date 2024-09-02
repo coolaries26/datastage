@@ -1,0 +1,488 @@
+Sat May 16 14:01:09 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Sat May 16 14:01:20 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 22 16:02:15 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 22 16:02:26 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 29 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 29 15:30:14 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 5 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 5 15:30:13 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 12 15:30:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 12 15:30:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 19 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 19 15:30:14 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 26 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 26 15:30:11 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 3 15:30:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 3 15:30:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Mon Jul 13 22:53:14 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Mon Jul 13 22:53:26 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 17 15:30:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 17 15:30:13 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 24 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 24 15:30:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 31 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 31 15:30:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Tue Aug 11 15:30:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Tue Aug 11 15:30:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 19 14:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 19 14:00:16 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: SCSP_CTRL_CHK job run error!!!
+Wed Aug 19 19:52:52 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 19 19:53:03 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 26 14:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 26 14:00:16 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: SCSP_CTRL_CHK job run error!!!
+Wed Aug 26 19:38:21 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 26 19:38:32 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 2 14:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 2 14:00:11 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 9 14:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 9 14:00:11 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 11 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 11 10:00:11 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 16 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 16 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Sep 18 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 18 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 23 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 23 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 25 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 25 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 30 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 30 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 2 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 2 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 7 10:00:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 7 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 9 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 9 10:00:11 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 14 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 14 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 16 10:00:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 16 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 21 10:00:01 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 21 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 23 10:00:00 CEST 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 23 10:00:12 CEST 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 28 10:00:01 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 28 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 30 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 30 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 4 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 4 10:00:13 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 6 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 6 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 11 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 11 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 13 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 13 10:00:05 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 18 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 18 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 20 10:00:01 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 20 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 25 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 25 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 27 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 27 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 2 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 2 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 4 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 4 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 9 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 9 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 11 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 11 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 16 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 16 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 18 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 18 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 23 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 23 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 25 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 25 10:00:11 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 30 10:00:00 CET 2015 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 30 10:00:12 CET 2015 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jan 1 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 1 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Jan 6 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Jan 6 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jan 29 16:13:45 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 29 16:14:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: SCSP_CTRL_CHK job run error!!!
+Fri Jan 29 17:43:56 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 29 17:44:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: SCSP_CTRL_CHK job run error!!!
+Fri Jan 29 18:20:37 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 29 18:20:53 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: SCSP_CTRL_CHK job run error!!!
+Wed Feb 3 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Feb 3 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 5 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 5 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Feb 10 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Feb 10 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 12 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 12 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Feb 17 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Feb 17 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 19 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 19 10:00:11 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Feb 24 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Feb 24 10:00:11 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 26 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 26 10:00:11 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Mar 2 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Mar 2 10:00:11 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 4 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 4 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Mar 9 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Mar 9 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 11 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 11 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 17 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 17 00:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 18 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 18 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 24 00:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 24 00:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 25 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 25 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 31 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 31 00:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 1 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 1 10:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 1 20:25:35 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 1 20:25:46 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 7 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 7 00:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 8 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 8 10:00:17 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 14 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 14 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 15 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 15 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 21 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 21 00:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 22 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 22 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 28 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 28 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 29 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 29 10:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 5 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 5 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 6 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 6 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 12 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 12 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 13 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 13 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 19 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 19 00:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 20 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 20 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 26 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 26 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 27 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 27 10:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 2 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 2 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 3 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 3 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 9 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 9 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 10 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 10 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 16 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 16 00:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 17 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 17 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 23 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 23 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 24 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 24 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 30 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 30 00:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 30 20:32:53 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 30 20:33:04 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 1 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 1 10:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Thu Jul 7 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 7 00:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 8 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 8 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jul 14 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 14 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jul 21 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 21 00:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 22 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 22 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jul 28 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 28 00:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 29 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 29 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Aug 4 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Aug 4 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 5 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 5 10:00:17 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Aug 11 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Aug 11 00:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 12 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 12 10:00:19 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Aug 18 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Aug 18 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 19 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 19 10:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Aug 25 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Aug 25 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 26 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 26 10:00:16 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Sep 1 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Sep 1 00:00:14 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 2 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 2 10:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Sep 8 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Sep 8 00:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 9 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 9 10:00:16 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Sep 15 00:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Sep 15 00:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 16 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 16 10:00:16 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Sep 22 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Sep 22 00:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 23 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 23 10:00:15 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Sep 29 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Sep 29 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 30 10:00:01 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 30 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Oct 6 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Oct 6 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 7 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 7 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Thu Oct 13 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Oct 13 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 14 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 14 10:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Oct 20 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Oct 20 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 21 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 21 10:00:13 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Oct 27 00:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Oct 27 00:00:12 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 28 10:00:00 CEST 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 28 10:00:11 CEST 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Nov 3 00:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Nov 3 00:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Nov 4 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 4 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Nov 10 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Nov 10 00:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 11 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 11 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Nov 17 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Nov 17 00:00:11 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 18 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 18 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Nov 24 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Nov 24 00:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 25 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 25 10:00:13 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Dec 1 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Dec 1 00:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 2 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 2 10:00:12 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Dec 8 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Dec 8 00:00:03 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 9 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 9 10:00:03 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Dec 15 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Dec 15 00:00:04 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 16 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 16 10:00:03 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Dec 22 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Dec 22 00:00:03 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 23 10:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 23 10:00:04 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Dec 29 00:00:00 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Dec 29 00:00:03 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 30 10:00:01 CET 2016 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 30 10:00:04 CET 2016 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jan 27 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 27 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Jan 27 13:07:18 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 27 13:07:21 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Jan 27 15:31:39 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jan 27 15:31:42 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Feb 2 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Feb 2 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 3 10:00:01 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 3 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Feb 9 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Feb 9 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 10 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 10 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Feb 16 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Feb 16 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 17 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 17 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Feb 23 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Feb 23 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Feb 24 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Feb 24 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 2 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 2 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 3 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 3 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 9 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 9 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 10 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 10 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 16 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 16 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 17 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 17 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 23 00:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 23 00:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 24 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 24 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Mar 30 00:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Mar 30 00:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Mar 31 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Mar 31 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 6 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 6 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 7 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 7 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 13 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 13 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 14 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 14 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 20 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 20 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 21 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 21 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Apr 27 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Apr 27 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Apr 28 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Apr 28 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 4 00:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 4 00:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 5 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 5 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 11 00:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 11 00:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 12 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 12 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 18 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 18 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 19 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 19 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu May 25 00:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu May 25 00:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri May 26 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri May 26 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 1 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 1 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 2 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 2 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 8 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 8 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 9 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 9 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 15 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 15 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 16 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 16 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Thu Jun 22 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 22 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 23 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 23 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jun 29 00:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jun 29 00:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jun 30 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jun 30 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Thu Jul 6 00:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 6 00:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Jul 7 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Jul 7 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Thu Jul 27 00:01:16 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Jul 27 00:01:18 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Mon Jul 31 16:25:13 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Mon Jul 31 16:25:16 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Mon Jul 31 18:04:52 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Mon Jul 31 18:04:54 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Wed Aug 2 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 2 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 4 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 4 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 9 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 9 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 11 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 11 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 16 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 16 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 18 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 18 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 23 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 23 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Aug 25 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Aug 25 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Aug 30 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Aug 30 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 1 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 1 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 6 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 6 10:00:05 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 8 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 8 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 13 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 13 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 15 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 15 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Sep 20 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 20 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Sep 22 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 22 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Wed Sep 27 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Sep 27 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Sep 29 10:00:01 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Sep 29 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 4 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 4 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 6 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 6 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 11 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 11 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 13 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 13 10:00:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 18 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 18 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Oct 20 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 20 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Oct 25 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Oct 25 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Thu Oct 26 11:16:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Thu Oct 26 11:16:03 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 0, no go, process terminated
+Fri Oct 27 10:00:00 CEST 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Oct 27 10:00:04 CEST 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 1 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 1 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 3 10:00:01 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 3 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 8 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 8 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 10 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 10 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 15 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 15 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 17 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 17 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 22 10:00:01 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 22 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Nov 24 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Nov 24 10:00:03 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Nov 29 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Nov 29 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 1 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 1 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Wed Dec 6 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Wed Dec 6 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process
+Fri Dec 8 10:00:00 CET 2017 >>> DI_DatastageDefault-diwasetl-build SalesConnect ETL: Starting SCSP
+Fri Dec 8 10:00:04 CET 2017 >>> DI_DatastageDefault-diwasetl-build Seller_Profile_TOP_Feed_ETL: status 1, proceed to process

@@ -1,0 +1,39 @@
+
+1. Drop existing views, if they exist 
+	db2 connect to saleconn user a1insctp
+	db2 -tvf dsw_setup1.sql
+	
+2.  Create alternate views for quotes and sales_order
+	cd $HOME/Views
+	./runAllViews.sh
+	
+3.  Create tablespace for new tables
+    db2 connect to saleconn user a1insctp
+    db2 -tvf dsw_setup3.sql
+    
+4. Create quotes table
+   db2 connect to saleconn user a1insctp
+   db2 -tvf dsw_setup4.sql
+   
+5. Create sales order table
+   db2 connect to saleconn user a1insctp
+   db2 -tvf dsw_setup5.sql
+   
+6. Export/Import data into Quotes and Order tables
+   ./dsw_setup6.sh
+   
+7. Install triggers
+   cd ../Triggers
+   ./install.sh
+   
+8. Apply Indexes 
+   su - sctid  (  or db2 connect to saleconn user sctid )
+   db2 -tvsf IdxOnSctid.sql
+  
+9. Create SME views
+	su - a1insctp
+	sed -e "s/ldap_blue_group/<your-ldap-name-UpperCase>/g"  smeViewAndGrant.sql >  runSme.sql 
+	db2 -tvsf  runSme.sql -l runSme.log
+
+	[[   For  ldap-blue-group use ->   SALESCONNECT_HADR for  Prod
+                                    SALESCONNECT_HADR_TEST for  T1   ]]

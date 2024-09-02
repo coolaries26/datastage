@@ -1,0 +1,2 @@
+. /db2/disk0/DataStage/Ascential/DataStage/DSEngine/dsenv
+$DSHOME/bin/uv -admin -stop

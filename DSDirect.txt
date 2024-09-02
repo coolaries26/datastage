@@ -1,0 +1,158 @@
+DataStage Report - Summary Log for job: UNVALIDATE_REVALIDATE_SEQ 
+Produced on: 10/9/2013 5:24:49 PM
+Project: CPT                           Host system: at3etaix1.atlanta.ibm.com
+Items: 1 - 98
+Sorted on: Date Sorter
+Entries are filtered
+
+   Occurred: 3:17:45 AM      On date: 10/4/2013            Type: Control
+   Event: Finished Job UNVALIDATE_REVALIDATE_SEQ.
+
+   Occurred: 7:44:50 AM      On date: 10/9/2013            Type: Control
+   Event: Starting Job UNVALIDATE_REVALIDATE_SEQ.
+
+   Occurred: 7:44:50 AM      On date: 10/9/2013            Type: Info
+   Event: Environment variable settings: (...)
+
+   Occurred: 7:44:50 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ: Set NLS locale to US-ENGLISH,US-ENGLISH,US-ENGLISH,US-ENGLISH,US-ENGLISH
+
+   Occurred: 7:44:51 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (crm_siteid_LOAD): Job run requested (...)
+
+   Occurred: 7:44:51 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job crm_siteid_LOAD to start
+
+   Occurred: 7:44:52 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job crm_siteid_LOAD to finish
+
+   Occurred: 7:45:08 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job crm_siteid_LOAD has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:45:09 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (CMR_UPDATE): Job run requested (...)
+
+   Occurred: 7:45:09 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job CMR_UPDATE to start
+
+   Occurred: 7:45:10 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job CMR_UPDATE to finish
+
+   Occurred: 7:45:28 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job CMR_UPDATE has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:45:28 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (DUNS_UPDATE): Job run requested (...)
+
+   Occurred: 7:45:28 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job DUNS_UPDATE to start
+
+   Occurred: 7:45:29 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job DUNS_UPDATE to finish
+
+   Occurred: 7:45:47 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job DUNS_UPDATE has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:45:47 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (LOC_UPDATE): Job run requested (...)
+
+   Occurred: 7:45:47 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job LOC_UPDATE to start
+
+   Occurred: 7:45:48 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job LOC_UPDATE to finish
+
+   Occurred: 7:46:00 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job LOC_UPDATE has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:46:00 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (SITE_ID_UPDATE_CMR): Job run requested (...)
+
+   Occurred: 7:46:00 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job SITE_ID_UPDATE_CMR to start
+
+   Occurred: 7:46:02 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job SITE_ID_UPDATE_CMR to finish
+
+   Occurred: 7:46:13 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job SITE_ID_UPDATE_CMR has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:46:14 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (DUNS_SITE_CCMS_1): Job run requested (...)
+
+   Occurred: 7:46:14 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job DUNS_SITE_CCMS_1 to start
+
+   Occurred: 7:46:15 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job DUNS_SITE_CCMS_1 to finish
+
+   Occurred: 7:46:20 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job DUNS_SITE_CCMS_1 has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:46:21 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (UPDATE_DUNS_SITE_GME1): Job run requested (...)
+
+   Occurred: 7:46:21 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job UPDATE_DUNS_SITE_GME1 to start
+
+   Occurred: 7:46:21 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job UPDATE_DUNS_SITE_GME1 to finish
+
+   Occurred: 7:46:36 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job UPDATE_DUNS_SITE_GME1 has finished, status = 1 (Finished OK)
+
+   Occurred: 7:46:36 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (DUNS_UPDATE_GME_1): Job run requested (...)
+
+   Occurred: 7:46:36 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job DUNS_UPDATE_GME_1 to start
+
+   Occurred: 7:46:37 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job DUNS_UPDATE_GME_1 to finish
+
+   Occurred: 7:46:48 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job DUNS_UPDATE_GME_1 has finished, status = 1 (Finished OK)
+
+   Occurred: 7:46:48 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (DUNS_SITE_CCMS_1): Job run requested (...)
+
+   Occurred: 7:46:48 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job DUNS_SITE_CCMS_1 to start
+
+   Occurred: 7:46:49 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job DUNS_SITE_CCMS_1 to finish
+
+   Occurred: 7:46:57 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job DUNS_SITE_CCMS_1 has finished, status = 2 (Finished with warnings)
+
+   Occurred: 7:46:57 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (UPDATE_DUNS_SITE_GME1): Job run requested (...)
+
+   Occurred: 7:46:57 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job UPDATE_DUNS_SITE_GME1 to start
+
+   Occurred: 7:46:57 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job UPDATE_DUNS_SITE_GME1 to finish
+
+   Occurred: 7:47:29 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job UPDATE_DUNS_SITE_GME1 has finished, status = 1 (Finished OK)
+
+   Occurred: 7:47:29 AM      On date: 10/9/2013            Type: RunJob
+   Event: UNVALIDATE_REVALIDATE_SEQ -> (CopyOfSITE_ID_UPDATE_LOC): Job run requested (...)
+
+   Occurred: 7:47:30 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSRunJob): Waiting for job CopyOfSITE_ID_UPDATE_LOC to start
+
+   Occurred: 7:47:30 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Waiting for job CopyOfSITE_ID_UPDATE_LOC to finish
+
+   Occurred: 7:47:45 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (DSWaitForJob): Job CopyOfSITE_ID_UPDATE_LOC has finished, status = 1 (Finished OK)
+
+   Occurred: 7:47:45 AM      On date: 10/9/2013            Type: Info
+   Event: UNVALIDATE_REVALIDATE_SEQ..JobControl (@Coordinator): Summary of sequence run (...)
+
+   Occurred: 7:47:46 AM      On date: 10/9/2013            Type: Control
+   Event: Finished Job UNVALIDATE_REVALIDATE_SEQ.
+
+End of report.

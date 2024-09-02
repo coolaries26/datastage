@@ -1,0 +1,44 @@
+as diosetl
+cd /var/datastage/scripts
+. ./varcreds.config
+
+db2 connect to $IDES_DBConn user $IDES_User using $IDES_Password
+
+db2 connect to $SC_DBConn user $SC_User using $SC_Password
+
+db2 connect to $IST_DBConn user $IST_User using $IST_Password
+
+db2 connect to $CISF_DBConn user $CISF_User using $CISF_Password
+
+db2 connect to $IDESAM_DBConn user $IDESAM_User using $IDESAM_Password
+
+db2 connect to $ODS_DBConn user $ODS_User using $ODS_Password
+
+db2 connect to $IDM_DBConn user $IDM_User using $IDM_Password
+
+db2 connect to $TOP_DBConn user $TOP_User using $TOP_Password
+
+db2 connect to $RDC_DBConn user $RDC_User using $RDC_Password
+
+db2 connect to $CMDW_DBConn user $CMDW_User using $CMDW_Password
+
+
+asnanalyze -db dswods saleconn -pw asnpwd.aut -la detailed
+
+select lastrun, apply_qual, set_name, status  from ASN.ibmsnap_applytrail where status=-1 and char(lastrun) >= '2018-05-29-08.00.03.872103'
+
+LASTRUN                    APPLY_QUAL         SET_NAME           STATUS
+-------------------------- ------------------ ------------------ ------
+2018-05-29-08.52.53.707544 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.47.52.127456 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.42.50.530441 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.37.49.334343 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.32.47.953488 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.27.47.655329 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.22.47.538938 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.17.47.366326 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.12.46.783679 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.07.46.679668 QUAL_AHE_T1        DSW_AHET1              -1
+2018-05-29-08.02.46.581799 QUAL_AHE_T1        DSW_AHET1              -1
+
+  11 record(s) selected.

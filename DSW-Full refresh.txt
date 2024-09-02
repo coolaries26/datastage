@@ -1,0 +1,47 @@
+
+---to check /get the error details on rdb025
+tail -n100 /home/dpdswap/dpropout/a1insctp.SALECONN.DPRADSW.APP.log
+
+---disable the below cron jobs on rdb025 as a1insctp
+
+/home/dpdswap/scripts/
+
+---disable the below cron jobs on b01aciisd004 as diosetl
+
+#05,15,25,35,45,55 * * * * . $HOME/.profile;/var/datastage/scripts/RTC_82457_Quotes_Base_MasterSeq.sh /var/datastage/scripts 1 >/tmp/RTC_82457_Base_Quotes.out 2>&1
+#10 * * * * . $HOME/.profile;/var/datastage/scripts/RTC_82457_Quotes_Rel_MasterSeq.sh /var/datastage/scripts 1 >/tmp/RTC_82457_Rel_Quotes.out 2>&1
+#00,10,20,30,40,50 * * * * . $HOME/.profile;/var/datastage/scripts/RTC_82457_Orders_Base_MasterSeq.sh /var/datastage/scripts 1 >/tmp/RTC_82457_Base_Orders.out 2>&1
+#05 * * * * . $HOME/.profile;/var/datastage/scripts/RTC_82457_Orders_Rel_MasterSeq.sh /var/datastage/scripts 1 >/tmp/RTC_82457_Rel_Orders.out 2>&1
+
+
+--on rdb025
+
+--To change the values for full refresh
+
+db2 "update asn.ibmsnap_subs_set set (LASTSUCCESS,SYNCHTIME,SYNCHPOINT)=(null,null,null) where SET_NAME='DSW_SET'" 
+
+--To check SYNC time
+
+db2 "select LASTSUCCESS,SYNCHTIME,SYNCHPOINT from asn.ibmsnap_subs_set "
+
+--Stop & start DSW apply afer above update statement went suceess 
+
+
+--To check load is happening 
+
+ps -ef|grep -i asnload
+
+-- To check the log
+
+su - dpdswap
+
+cd dpropout
+cd /home/dpdswap/dpropout
+cat a1insctp.SALECONN.DPRADSW.APP.log  --> TO check for any errors
+
+
+Note : once full refresh done enable the crons for diosetl id 
+
+----to connect to dswods db
+db2 connect to dswods user dpdswne
+mVuGg`F9
